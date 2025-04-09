@@ -1,0 +1,21 @@
+<!--2-1 个人信息-->
+<!--2025-04-08-->
+
+<view class="safe-area-inset-bottom">
+<!-- 头像区域  -->
+<view class="top">
+  <view class="user-img">
+    <image src="/images/avatar.jpg"></image>
+  </view>
+</view>
+
+<!-- 详细信息区域  -->
+<view class="menu">
+  <view class="item">Name: Haruki</view>
+  <view class="item">Age: 20</view>
+  <view class="item">Sex: Male</view>
+  <view class="item">Special: Table Tennis</view>
+  <view class="item">Hobby: AIGC</view>
+</view>
+
+</view>
