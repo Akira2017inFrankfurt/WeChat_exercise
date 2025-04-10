@@ -1,0 +1,56 @@
+/* pages/grid/grid.wxss */
+
+ /* 设置轮播区域的高度 */ 
+swiper{
+  height: 350rpx;
+}
+
+ /* 设置轮播区域图像的占比 */ 
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+ /* 设置九宫格的样式 */ 
+.grids{
+  display: flex;   /* 该容器布局为Flex布局 */ 
+  flex-wrap: wrap;  /* 自动换行，当一行满了就自动换 */ 
+}
+
+.grids .item{
+  width: 250rpx;  /* 设置每个格子的宽度为1/3宽，这样每行就能显示3个格子 */ 
+  height: 250rpx;  /* 正方形 */ 
+  border-right: 1rpx solid #eee;  /* 设置每个格子的右边和下边框 */ 
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;  /* 元素指定的任何内边距和边框都将在已经设定的宽度和告诉内进行绘制 */ 
+  display: flex;   /* 每个格子设置为Flex布局 */ 
+  flex-direction: column;  /* 每个格子的主轴为纵向 */ 
+  justify-content: center;   /* 主轴和交叉轴的对齐方向设置为居中 */ 
+  align-items: center;
+}
+
+ /* 清楚几个格子的右边框 */ 
+.grids .item:nth-child(3){
+  border-right: 0;
+}
+
+.grids .item:nth-child(6){
+  border-right: 0;
+}
+
+.grids .item:nth-child(9){
+  border-right: 0;
+}
+
+ /* 每个格子的图像和文字页面样式 */ 
+.grids .item image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.grids .item text{
+  color: #999;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
